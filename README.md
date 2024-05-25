@@ -19,3 +19,6 @@ $ corepack enable
 $ pnpm install
 $ pnpm build
 ```
+
+[cc-by-nc-nd]: http://creativecommons.org/licenses/by-nc-nd/4.0/
+[cc-by-nc-nd-image]: https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png
