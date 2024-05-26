@@ -3,38 +3,38 @@ import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title="Aroundy">
-	<header>
-		<div>
+	<header class="flex">
+		<div class="mr-auto">
 			<img />
 			<h1>Aroundy</h1>
 		</div>
 		<a>기업 로그인</a>
 	</header>
 	<main>
-		<div>
+		<div class="flex justify-center items-center">
 			<div>
-				<h2>
+				<h2 class="text-center">
 					내가 찾던 혜택과 정보<br />어라운디에서
 					쉽고 빠르게
 				</h2>
-				<div>
+				<div class="flex justify-center">
 					<button>Google Play</button>
 					<button>App Store</button>
 				</div>
 			</div>
 		</div>
-		<div>
+		<div class="flex">
 			<p>일상 속 이벤트와 새로운 서비스를</p>
 			<img />
 		</div>
-		<div>
+		<div class="flex">
 			<img />
 			<p>가장 빠르게 만나볼 수 있습니다</p>
 		</div>
 		<div>
 			<h3>Real <span>Talk</span></h3>
 			<ul>
-				<li>
+				<li class="flex flex-col">
 					<h4>추천해요!</h4>
 					<p>
 						사고 싶던건 꼭 이벤트 끝나고 나서야
@@ -43,7 +43,7 @@ import Layout from '../layouts/Layout.astro'
 					</p>
 					<span>김*준 님</span>
 				</li>
-				<li>
+				<li class="flex flex-col">
 					<h4>진짜 필요한 어플</h4>
 					<p>
 						할인정보를 한눈에 볼 수 있어서 너무
@@ -55,7 +55,7 @@ import Layout from '../layouts/Layout.astro'
 					</p>
 					<span>최*연 님</span>
 				</li>
-				<li>
+				<li class="flex flex-col">
 					<h4>카테고리 굳</h4>
 					<p>
 						여러 정보들이 많고 한 눈에 보기
