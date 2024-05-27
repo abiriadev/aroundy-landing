@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import RealTalkCard from '../components/RealTalkCard.astro'
 ---
 
 <Layout title="Aroundy">
@@ -47,33 +48,25 @@ import Layout from '../layouts/Layout.astro'
 			</h3>
 			<ul class="flex">
 				<li class="flex flex-col">
-					<h4>추천해요!</h4>
-					<p>
-						사고 싶던건 꼭 이벤트 끝나고 나서야
-						알게되었는데, 미리미리 이벤트를
-						알려주니 너무 좋아요!
-					</p>
-					<span>김*준 님</span>
+					<RealTalkCard
+						title="추천해요!"
+						review="사고 싶던건 꼭 이벤트 끝나고 나서야 알게되었는데, 미리미리 이벤트를 알려주니 너무 좋아요!"
+						author="김*준"
+					/>
 				</li>
 				<li class="flex flex-col">
-					<h4>진짜 필요한 어플</h4>
-					<p>
-						할인정보를 한눈에 볼 수 있어서 너무
-						좋네요 전에는 할인정보를 찾아
-						다녔다면 이제 안그래도 될 것
-						같아요!! 브랜드별로 할인정보가 다
-						나와있어서 찾아다닐 필요가 없어요..
-						여지껏 힘들었는데 ㅠㅠ
-					</p>
-					<span>최*연 님</span>
+					<RealTalkCard
+						title="진짜 필요한 어플"
+						review="할인정보를 한눈에 볼 수 있어서 너무 좋네요 전에는 할인정보를 찾아 다녔다면 이제 안그래도 될 것 같아요!! 브랜드별로 할인정보가 다 나와있어서 찾아다닐 필요가 없어요.. 여지껏 힘들었는데 ㅠㅠ"
+						author="최*연"
+					/>
 				</li>
 				<li class="flex flex-col">
-					<h4>카테고리 굳</h4>
-					<p>
-						여러 정보들이 많고 한 눈에 보기
-						편하게 정리가 되어 있어서 좋아요!
-					</p>
-					<span>이*훈 님</span>
+					<RealTalkCard
+						title="카테고리 굳"
+						review="여러 정보들이 많고 한 눈에 보기 편하게 정리가 되어 있어서 좋아요!"
+						author="이*훈"
+					/>
 				</li>
 			</ul>
 		</div>
