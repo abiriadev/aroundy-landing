@@ -1,0 +1,15 @@
+---
+interface Props {
+	title: string
+	review: string
+	author: string
+}
+
+const { title, review, author } = Astro.props
+---
+
+<div>
+	<h4>{title}</h4>
+	<p>{review}</p>
+	<span>{author} 님</span>
+</div>
