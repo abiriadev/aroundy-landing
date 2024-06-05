@@ -8,7 +8,9 @@ interface Props {
 const { icon } = Astro.props
 ---
 
-<button>
-	<Icon name={icon} />
+<button
+	class="flex items-center rounded-lg bg-white px-6 py-2 text-xl font-medium text-gray-600"
+>
+	<Icon name={icon} size={40} />
 	<slot />
 </button>
