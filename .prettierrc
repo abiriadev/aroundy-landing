@@ -1,31 +1,29 @@
 {
 	"$schema": "https://json.schemastore.org/prettierrc.json",
-	"editorconfig": true,
-	"printWidth": 60,
-	"tabWidth": 4,
-	"useTabs": true,
 	"semi": false,
 	"singleQuote": true,
-	"trailingComma": "all",
 	"bracketSpacing": true,
 	"arrowParens": "avoid",
 	"htmlWhitespaceSensitivity": "ignore",
-	"endOfLine": "lf",
-	"vueIndentScriptAndStyle": true,
 	"overrides": [
-		{
-			"files": ["*.yaml", "*.yml"],
-			"options": {
-				"tabWidth": 2
-			}
-		},
 		{
 			"files": ".swcrc",
 			"options": {
-				"parser": "json",
-				"tabWidth": 4
+				"parser": "json"
 			}
 		}
 	],
-	"plugins": ["prettier-plugin-astro"]
+	"plugins": [
+		"@trivago/prettier-plugin-sort-imports",
+		"prettier-plugin-astro",
+		"prettier-plugin-tailwindcss"
+	],
+	"importOrder": [
+		"^node:(.*)$",
+		"<THIRD_PARTY_MODULES>",
+		"^@/(.*)$",
+		"^[./]"
+	],
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true
 }
