@@ -7,72 +7,68 @@ import logo from '../assets/primary.svg'
 ---
 
 <Layout title="Aroundy">
-	<header class="flex items-center p-3 backdrop-blur">
-		<div class="mr-auto flex items-center gap-3">
-			<Image src={logo} alt="logo" width={38} />
-			<h1 class="text-4xl font-semibold">Aroundy</h1>
-		</div>
-		<a>기업 로그인</a>
-	</header>
-	<main>
-		<div
-			class="flex h-screen items-center justify-center bg-[linear-gradient(to_bottom,#555555dd,#333333ee),url(/banner.png)]"
+	<div
+		class="relative flex h-screen items-center justify-center bg-[linear-gradient(to_bottom,#555555dd,#333333ee),url(/banner.png)]"
+	>
+		<header
+			class="absolute left-0 top-0 flex w-full items-center bg-white p-3"
 		>
-			<div class="flex flex-col gap-6">
-				<h2
-					class="text-center text-5xl font-bold leading-normal text-white"
+			<div class="mr-auto flex items-center gap-3">
+				<Image src={logo} alt="logo" width={38} />
+				<h1 class="text-4xl font-semibold">Aroundy</h1>
+			</div>
+			<a>기업 로그인</a>
+		</header>
+		<div class="flex flex-col gap-6">
+			<h2
+				class="text-center text-5xl font-bold leading-normal text-white"
+			>
+				내가 찾던 혜택과 정보<br />어라운디에서 <span
+					class="text-primary-400"
 				>
-					내가 찾던 혜택과 정보<br />어라운디에서 <span
-						class="text-primary-400"
-					>
-						쉽고 빠르게
-					</span>
-				</h2>
-				<div class="flex justify-center gap-4">
-					<InstallButton icon="mage:playstore"
-						>Google Play</InstallButton
-					>
-					<InstallButton icon="mage:apple">App Store</InstallButton>
-				</div>
+					쉽고 빠르게
+				</span>
+			</h2>
+			<div class="flex justify-center gap-4">
+				<InstallButton icon="mage:playstore">Google Play</InstallButton>
+				<InstallButton icon="mage:apple">App Store</InstallButton>
 			</div>
 		</div>
-		<div class="flex">
-			<p class="text-2xl font-semibold">
-				일상 속 이벤트와 새로운 서비스를
-			</p>
-			<img />
-		</div>
-		<div class="flex">
-			<img />
-			<p class="text-2xl font-semibold">가장 빠르게 만나볼 수 있습니다</p>
-		</div>
-		<div class="bg-primary-100">
-			<h3 class="my-4 text-center text-4xl font-semibold">
-				Real <span class="text-primary-400">Talk</span>
-			</h3>
-			<ul class="flex gap-6">
-				<li class="flex flex-col">
-					<RealTalkCard
-						title="추천해요!"
-						review="사고 싶던건 꼭 이벤트 끝나고 나서야 알게되었는데, 미리미리 이벤트를 알려주니 너무 좋아요!"
-						author="김*준"
-					/>
-				</li>
-				<li class="flex flex-col">
-					<RealTalkCard
-						title="진짜 필요한 어플"
-						review="할인정보를 한눈에 볼 수 있어서 너무 좋네요 전에는 할인정보를 찾아 다녔다면 이제 안그래도 될 것 같아요!! 브랜드별로 할인정보가 다 나와있어서 찾아다닐 필요가 없어요.. 여지껏 힘들었는데 ㅠㅠ"
-						author="최*연"
-					/>
-				</li>
-				<li class="flex flex-col">
-					<RealTalkCard
-						title="카테고리 굳"
-						review="여러 정보들이 많고 한 눈에 보기 편하게 정리가 되어 있어서 좋아요!"
-						author="이*훈"
-					/>
-				</li>
-			</ul>
-		</div>
-	</main>
+	</div>
+	<div class="flex">
+		<p class="text-2xl font-semibold">일상 속 이벤트와 새로운 서비스를</p>
+		<img />
+	</div>
+	<div class="flex">
+		<img />
+		<p class="text-2xl font-semibold">가장 빠르게 만나볼 수 있습니다</p>
+	</div>
+	<div class="bg-primary-100">
+		<h3 class="my-4 text-center text-4xl font-semibold">
+			Real <span class="text-primary-400">Talk</span>
+		</h3>
+		<ul class="flex gap-6">
+			<li class="flex flex-col">
+				<RealTalkCard
+					title="추천해요!"
+					review="사고 싶던건 꼭 이벤트 끝나고 나서야 알게되었는데, 미리미리 이벤트를 알려주니 너무 좋아요!"
+					author="김*준"
+				/>
+			</li>
+			<li class="flex flex-col">
+				<RealTalkCard
+					title="진짜 필요한 어플"
+					review="할인정보를 한눈에 볼 수 있어서 너무 좋네요 전에는 할인정보를 찾아 다녔다면 이제 안그래도 될 것 같아요!! 브랜드별로 할인정보가 다 나와있어서 찾아다닐 필요가 없어요.. 여지껏 힘들었는데 ㅠㅠ"
+					author="최*연"
+				/>
+			</li>
+			<li class="flex flex-col">
+				<RealTalkCard
+					title="카테고리 굳"
+					review="여러 정보들이 많고 한 눈에 보기 편하게 정리가 되어 있어서 좋아요!"
+					author="이*훈"
+				/>
+			</li>
+		</ul>
+	</div>
 </Layout>
