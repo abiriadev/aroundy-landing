@@ -4,6 +4,8 @@ import RealTalkCard from '../components/RealTalkCard.astro'
 import InstallButton from '../components/InstallButton.astro'
 import { Image } from 'astro:assets'
 import logo from '../assets/primary.svg'
+import phone1 from '../assets/phone-1.png'
+import phone2 from '../assets/phone-2.png'
 ---
 
 <Layout title="Aroundy">
@@ -37,10 +39,10 @@ import logo from '../assets/primary.svg'
 	</div>
 	<div class="flex">
 		<p class="text-2xl font-semibold">일상 속 이벤트와 새로운 서비스를</p>
-		<img />
+		<Image src={phone1} alt="phone image 1" />
 	</div>
 	<div class="flex">
-		<img />
+		<Image src={phone2} alt="phone image 2" />
 		<p class="text-2xl font-semibold">가장 빠르게 만나볼 수 있습니다</p>
 	</div>
 	<div class="bg-primary-100">
