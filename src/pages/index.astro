@@ -13,7 +13,7 @@ import phone2 from '../assets/phone-2.png'
 		class="relative flex h-screen items-center justify-center bg-[linear-gradient(to_bottom,#555555dd,#333333ee),url(/banner.png)]"
 	>
 		<header
-			class="absolute left-0 top-0 flex w-full items-center bg-white p-3 shadow"
+			class="absolute left-0 top-0 flex w-full items-center bg-white p-3"
 		>
 			<div class="mr-auto flex items-center gap-3">
 				<Image src={logo} alt="logo" width={38} />
@@ -43,38 +43,36 @@ import phone2 from '../assets/phone-2.png'
 		</p>
 		<Image src={phone1} alt="phone image 1" class="max-h-[80vh] w-auto" />
 	</div>
+	<div class="flex">
+		<Image src={phone2} alt="phone image 2" />
+		<p class="text-2xl font-semibold">가장 빠르게 만나볼 수 있습니다</p>
+	</div>
+	<div class="bg-primary-100">
+		<h3 class="my-4 text-center text-4xl font-semibold">
+			Real <span class="text-primary-400">Talk</span>
+		</h3>
+		<ul class="flex gap-6">
+			<li class="flex flex-col">
+				<RealTalkCard
+					title="추천해요!"
+					review="사고 싶던건 꼭 이벤트 끝나고 나서야 알게되었는데, 미리미리 이벤트를 알려주니 너무 좋아요!"
+					author="김*준"
+				/>
+			</li>
+			<li class="flex flex-col">
+				<RealTalkCard
+					title="진짜 필요한 어플"
+					review="할인정보를 한눈에 볼 수 있어서 너무 좋네요 전에는 할인정보를 찾아 다녔다면 이제 안그래도 될 것 같아요!! 브랜드별로 할인정보가 다 나와있어서 찾아다닐 필요가 없어요.. 여지껏 힘들었는데 ㅠㅠ"
+					author="최*연"
+				/>
+			</li>
+			<li class="flex flex-col">
+				<RealTalkCard
+					title="카테고리 굳"
+					review="여러 정보들이 많고 한 눈에 보기 편하게 정리가 되어 있어서 좋아요!"
+					author="이*훈"
+				/>
+			</li>
+		</ul>
+	</div>
 </Layout>
-<div class="flex h-screen items-center justify-center gap-[180px]">
-	<Image src={phone2} alt="phone image 2" class="max-h-[80vh] w-auto" />
-	<p class="text-5xl font-bold leading-tight">
-		가장 빠르게<br />만나볼 수 있습니다
-	</p>
-</div>
-<div class="bg-primary-100">
-	<h3 class="my-4 text-center text-4xl font-semibold">
-		Real <span class="text-primary-400">Talk</span>
-	</h3>
-	<ul class="flex gap-6">
-		<li class="flex flex-col">
-			<RealTalkCard
-				title="추천해요!"
-				review="사고 싶던건 꼭 이벤트 끝나고 나서야 알게되었는데, 미리미리 이벤트를 알려주니 너무 좋아요!"
-				author="김*준"
-			/>
-		</li>
-		<li class="flex flex-col">
-			<RealTalkCard
-				title="진짜 필요한 어플"
-				review="할인정보를 한눈에 볼 수 있어서 너무 좋네요 전에는 할인정보를 찾아 다녔다면 이제 안그래도 될 것 같아요!! 브랜드별로 할인정보가 다 나와있어서 찾아다닐 필요가 없어요.. 여지껏 힘들었는데 ㅠㅠ"
-				author="최*연"
-			/>
-		</li>
-		<li class="flex flex-col">
-			<RealTalkCard
-				title="카테고리 굳"
-				review="여러 정보들이 많고 한 눈에 보기 편하게 정리가 되어 있어서 좋아요!"
-				author="이*훈"
-			/>
-		</li>
-	</ul>
-</div>
