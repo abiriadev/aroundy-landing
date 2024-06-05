@@ -1,0 +1,14 @@
+---
+import { Icon } from 'astro-icon/components'
+
+interface Props {
+	icon: string
+}
+
+const { icon } = Astro.props
+---
+
+<button>
+	<Icon name={icon} />
+	<slot />
+</button>

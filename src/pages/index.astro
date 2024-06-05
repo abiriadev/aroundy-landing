@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import RealTalkCard from '../components/RealTalkCard.astro'
+import InstallButton from '../components/InstallButton.astro'
 ---
 
 <Layout title="Aroundy">
@@ -16,12 +17,20 @@ import RealTalkCard from '../components/RealTalkCard.astro'
 			class="flex h-screen items-center justify-center bg-[linear-gradient(to_bottom,#555555dd,#333333ee),url(/banner.png)]"
 		>
 			<div>
-				<h2 class="text-center text-5xl font-bold text-white leading-normal">
-					내가 찾던 혜택과 정보<br />어라운디에서 <span class="text-primary-400">쉽고 빠르게</span>
+				<h2
+					class="text-center text-5xl font-bold leading-normal text-white"
+				>
+					내가 찾던 혜택과 정보<br />어라운디에서 <span
+						class="text-primary-400"
+					>
+						쉽고 빠르게
+					</span>
 				</h2>
 				<div class="flex justify-center gap-2">
-					<button>Google Play</button>
-					<button>App Store</button>
+					<InstallButton icon="mage:playstore"
+						>Google Play</InstallButton
+					>
+					<InstallButton icon="mage:apple">App Store</InstallButton>
 				</div>
 			</div>
 		</div>
